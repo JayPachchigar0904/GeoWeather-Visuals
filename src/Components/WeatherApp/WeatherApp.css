@@ -69,9 +69,10 @@
         margin-bottom: 5px;
     }
     @media(min-width:351px) and (max-width:865px) and (orientation:portrait){
-        padding:5px;
-        width:280px;
-        height:44px;
+        padding:10px;
+        width:252px;
+        height:36px;
+        margin-bottom: 10px;
     }
     @media (max-width:750px) and (orientation:landscape){
         width:285px;
@@ -84,6 +85,7 @@
     justify-content: center;
     @media(min-width:351px) and (max-width:865px) and (orientation:portrait){
         margin-top:7%;
+        margin-bottom: 15px;
     }
 }
 .weather-temp{
