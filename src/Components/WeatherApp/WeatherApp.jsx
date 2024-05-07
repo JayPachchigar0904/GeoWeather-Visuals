@@ -26,8 +26,8 @@ const WeatherApp = () => {
     const wind = document.getElementsByClassName("wind-rate");
     const temperature = document.getElementsByClassName("weather-temp");
     const location = document.getElementsByClassName("weather-location");
-    humidity[0].innerHTML = data.main.humidity + " %";
-    wind[0].innerHTML = Math.floor(data.wind.speed) + " km/h";
+    humidity[0].innerHTML = data.main.humidity + "%";
+    wind[0].innerHTML = Math.floor(data.wind.speed) + "km/h";
     temperature[0].innerHTML = Math.floor(data.main.temp) +" °c";
     location[0].innerHTML = data.name;
     if(data.weather[0].icon === "01d" || data.weather[0].icon === "01n")
@@ -76,25 +76,25 @@ const WeatherApp = () => {
    <div className = "top-bar">
     <input type = "text" className = "cityInput" placeholder="Search"/>
     <div className = "search" onClick = {() => {search()}}>
-        <img src = {Search}  alt = "search-icon" height="30px" width="30px"/>
+        <img src = {Search}  alt = "search-icon" height="30vh" width="30vw"/>
     </div>
    </div>
    <div className = "weather-image" >
-   <img src = {wicon}  alt = "cloud-icon" height="130px" width="130px"/>
+   <img src = {wicon}  alt = "cloud-icon" height="120vh" width="120vw"/>
    </div>
    <div className = "weather-temp" >24°C</div>
    <div className = "weather-location" >London</div>
    <div className = "data-container">
     <div className = "element">
-     <img src = {Humidity} alt = "" className = "icon" height="45px" width="45px"/>
+     <img src = {Humidity} alt = "" className = "icon first" height="45vh" width="45vw"/>
      <div className = "data">
        <div className = "humidity-percent">64%</div>
        <div className = "text">Humidity</div>
      </div>
     </div>
     <div className = "element">
-     <img src = {Windy} alt = "" className = "icon" height="45px" width="45px"/>
-     <div className = "data">
+     <img src = {Windy} alt = "" className = "icon second " height="45vh" width="45vw"/>
+     <div className = "data second">
        <div className = "wind-rate">18km/h</div>
        <div className = "text">Wind Speed</div>
      </div>
